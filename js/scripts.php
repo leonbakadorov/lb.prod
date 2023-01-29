@@ -271,7 +271,11 @@ document.addEventListener("DOMContentLoaded", function() {
             HyperImages('.swiper-container .swiper-slide:first-child source[data-srcset]','data-srcset','srcset');
         }
     }
-    setTimeout(FirstImagesDisplay, 500);
+
+
+    document.querySelector('.luxe').addEventListener('load', function (){
+        setTimeout(FirstImagesDisplay, 500);
+    })
 
 
 
