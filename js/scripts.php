@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    document.querySelector('.luxe').addEventListener('load', function (){
+    window.addEventListener('load', function (){
         setTimeout(FirstImagesDisplay, 500);
     })
 
