@@ -2135,165 +2135,194 @@
 
 
 
-<style>
+<div class="luxe">
 
-    .luxe-container {
-        display: block;
-        background: linear-gradient(#0E0E0E 66%, #FFFFFF 66%);
-        position: relative;
-    }
-    /*.luxe-container:after {
-        content: '';
-        position: absolute;
-        z-index: 2000;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center center;
-        background-image: url(/luxe/luxe-join-top.svg);
-    }*/
-    .luxe-image {
-        width: 100%;
-        position: relative;
-        z-index: 1000;
-        vertical-align: middle;
-    }
-    [data-luxe-image] {
-        position: relative;
-        display: block;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center center;
-    }
-    [data-luxe-image]:after {
-        content: '';
-        position: absolute;
-        z-index: 2000;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center center;
-    }
-
-
-</style>
-
-<div class="luxe-container">
     <style>
-        [data-luxe-image="0"] {
-            height: calc(100vw / 1.61979753);
-            background-image: url(/luxe/luxe-0_small.jpg);
+
+        .luxe-container {
+            display: block;
+            background: linear-gradient(#0E0E0E 66%, #FFFFFF 66%);
+            position: relative;
         }
-        @media (min-width: 1065px) {
+        /*.luxe-container:after {
+            content: '';
+            position: absolute;
+            z-index: 2000;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
+            background-image: url(/luxe/luxe-join-top.svg);
+        }*/
+        .luxe-image {
+            width: 100%;
+            position: relative;
+            z-index: 1000;
+            vertical-align: middle;
+        }
+        [data-luxe-image] {
+            position: relative;
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
+        }
+        [data-luxe-image]:before, [data-luxe-image]:after {
+            content: '';
+            position: absolute;
+            z-index: 2000;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
+        }
+        [data-luxe-image]:before {
+            z-index: 1000;
+        }
+
+
+    </style>
+    <div class="luxe-container">
+        <style>
             [data-luxe-image="0"] {
-                background-image: url(/luxe/luxe-0_large.jpg);
+                height: calc(100vw / 1.61979753);
+
             }
-        }
+
+            [data-luxe-image="0"]:before {
+                background-image: url(/luxe/luxe-0_small.jpg);
+            }
+            @media (min-width: 1065px) {
+                [data-luxe-image="0"]:before {
+                    background-image: url(/luxe/luxe-0_large.jpg);
+                }
+            }
 
 
-        [data-luxe-image="0"]:after {
-            background-image: url(/luxe/luxe-0-top.svg);
-        }
-    </style>
-    <div data-luxe-image="0"></div>
+            [data-luxe-image="0"]:after {
+                background-image: url(/luxe/luxe-0-top.svg);
+            }
+        </style>
+        <div data-luxe-image="0"></div>
 
-    <style>
-        [data-luxe-image="1"] {
-            height: calc(100vw / 0.3900325);
-            background-image: url(/luxe/luxe-1_small.jpg);
-        }
-        @media (min-width: 1065px) {
+        <style>
             [data-luxe-image="1"] {
-                background-image: url(/luxe/luxe-1_large.jpg);
+                height: calc(100vw / 0.3900325);
+
             }
-        }
+
+            [data-luxe-image="1"]:before {
+                background-image: url(/luxe/luxe-1_small.jpg);
+            }
+            @media (min-width: 1065px) {
+                [data-luxe-image="1"]:before {
+                    background-image: url(/luxe/luxe-1_large.jpg);
+                }
+            }
 
 
-        [data-luxe-image="1"]:after {
-            background-image: url(/luxe/luxe-1-top.svg);
-        }
-    </style>
-    <div data-luxe-image="1"></div>
+            [data-luxe-image="1"]:after {
+                background-image: url(/luxe/luxe-1-top.svg);
+            }
+        </style>
+        <div data-luxe-image="1"></div>
 
-    <style>
-        [data-luxe-image="2"] {
-            height: calc(100vw / 0.67226891);
-            background-image: url(/luxe/luxe-2_small.jpg);
-        }
-        @media (min-width: 1065px) {
+        <style>
             [data-luxe-image="2"] {
-                background-image: url(/luxe/luxe-2_large.jpg);
+                height: calc(100vw / 0.67226891);
+
             }
-        }
+
+            [data-luxe-image="2"]:before {
+                background-image: url(/luxe/luxe-2_small.jpg);
+            }
+            @media (min-width: 1065px) {
+                [data-luxe-image="2"]:before {
+                    background-image: url(/luxe/luxe-2_large.jpg);
+                }
+            }
 
 
-        [data-luxe-image="2"]:after {
-            background-image: url(/luxe/luxe-2-top.svg);
-        }
-    </style>
-    <div data-luxe-image="2"></div>
+            [data-luxe-image="2"]:after {
+                background-image: url(/luxe/luxe-2-top.svg);
+            }
+        </style>
+        <div data-luxe-image="2"></div>
 
-    <style>
-        [data-luxe-image="3"] {
-            height: calc(100vw / 0.89775561);
-            background-image: url(/luxe/luxe-3_small.jpg);
-        }
-        @media (min-width: 1065px) {
+        <style>
             [data-luxe-image="3"] {
-                background-image: url(/luxe/luxe-3_large.jpg);
+                height: calc(100vw / 0.89775561);
+
             }
-        }
+
+            [data-luxe-image="3"]:before {
+                background-image: url(/luxe/luxe-3_small.jpg);
+            }
+            @media (min-width: 1065px) {
+                [data-luxe-image="3"]:before {
+                    background-image: url(/luxe/luxe-3_large.jpg);
+                }
+            }
 
 
-        [data-luxe-image="3"]:after {
-            background-image: url(/luxe/luxe-3-top.svg);
-        }
-    </style>
-    <div data-luxe-image="3"></div>
+            [data-luxe-image="3"]:after {
+                background-image: url(/luxe/luxe-3-top.svg);
+            }
+        </style>
+        <div data-luxe-image="3"></div>
 
-    <style>
-        [data-luxe-image="4"] {
-            height: calc(100vw / 0.68767908);
-            background-image: url(/luxe/luxe-4_small.jpg);
-        }
-        @media (min-width: 1065px) {
+        <style>
             [data-luxe-image="4"] {
-                background-image: url(/luxe/luxe-4_large.jpg);
+                height: calc(100vw / 0.68767908);
+
             }
-        }
+
+            [data-luxe-image="4"]:before {
+                background-image: url(/luxe/luxe-4_small.jpg);
+            }
+            @media (min-width: 1065px) {
+                [data-luxe-image="4"]:before {
+                    background-image: url(/luxe/luxe-4_large.jpg);
+                }
+            }
 
 
-        [data-luxe-image="4"]:after {
-            background-image: url(/luxe/luxe-4-top.svg);
-        }
-    </style>
-    <div data-luxe-image="4"></div>
+            [data-luxe-image="4"]:after {
+                background-image: url(/luxe/luxe-4-top.svg);
+            }
+        </style>
+        <div data-luxe-image="4"></div>
 
-    <style>
-        [data-luxe-image="5"] {
-            height: calc(100vw / 0.73619632);
-            background-image: url(/luxe/luxe-5_small.jpg);
-        }
-        @media (min-width: 1065px) {
+        <style>
             [data-luxe-image="5"] {
-                background-image: url(/luxe/luxe-5_large.jpg);
+                height: calc(100vw / 0.73619632);
+
             }
-        }
+
+            [data-luxe-image="5"]:before {
+                background-image: url(/luxe/luxe-5_small.jpg);
+            }
+            @media (min-width: 1065px) {
+                [data-luxe-image="5"]:before {
+                    background-image: url(/luxe/luxe-5_large.jpg);
+                }
+            }
 
 
-        [data-luxe-image="5"]:after {
-            background-image: url(/luxe/luxe-5-top.svg);
-        }
-    </style>
-    <div data-luxe-image="5"></div>
+            [data-luxe-image="5"]:after {
+                background-image: url(/luxe/luxe-5-top.svg);
+            }
+        </style>
+        <div data-luxe-image="5"></div>
 
+    </div>
 </div>
 
 
