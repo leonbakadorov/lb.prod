@@ -12,7 +12,7 @@
             display: block;
             width: 100%;
             background-repeat: no-repeat, no-repeat;
-            background-size: 100% 100%, 100% 100%;
+            background-size: cover, cover;
             background-position: top left, top left;
         }
 
