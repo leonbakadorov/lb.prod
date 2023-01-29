@@ -111,11 +111,10 @@
 
     @media only screen and (max-width: 735px) {
         .product-more {
-            font-size: 19px;
+            font-size: 20px;
             line-height: 1.5446;
             font-weight: 400;
-            letter-spacing: -.032em;
-            font-family: "Pro Text", "Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            letter-spacing: -.002em;
             max-width: 300px;
         }
     }
@@ -200,7 +199,7 @@
         height: 378px;
         background-size: 980px 378px;
         background-repeat: no-repeat;
-        background-image: url(img/bugatti/bugatti-promo.png);
+        background-image: url(img/bugatti/bugatti-promo_large.png);
         box-shadow: -34px 55px 84px rgb(0 0 0 / 25%);
         border-radius: 1.27em;
         overflow: visible;
@@ -243,6 +242,7 @@
 
     @media only screen and (max-width: 735px){
         .product-bugatti figure.image-bugatti-01 {
+            background-image: url(img/bugatti/bugatti-promo_small.png);
             border-radius: 0.34em;
             margin-top: 32px;
         }
