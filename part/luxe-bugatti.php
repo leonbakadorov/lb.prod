@@ -12,7 +12,7 @@
             display: block;
             width: 100%;
             background-repeat: no-repeat, no-repeat;
-            background-size: 100%, 100%;
+            background-size: cover, cover;
             background-position: center center, center center;
         }
 
@@ -21,7 +21,7 @@
         <?
 
         $width = 1440;
-        $precision = 1;
+        $precision = 8;
         $images = [
             0 => round($width / 889, $precision),
             1 => round($width / 3692, $precision),
