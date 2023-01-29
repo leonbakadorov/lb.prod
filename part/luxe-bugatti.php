@@ -7,19 +7,6 @@
             background: linear-gradient(#0E0E0E 66%, #FFFFFF 66%);
             position: relative;
         }
-        /*.luxe-container:after {
-            content: '';
-            position: absolute;
-            z-index: 2000;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center center;
-            background-image: url(/luxe/luxe-join-top.svg);
-        }*/
         .luxe-image {
             width: 100%;
             position: relative;
@@ -76,7 +63,7 @@
                     [data-luxe-image="<?= $key; ?>"]:before {
                         background-image: url(/luxe/luxe-<?= $key; ?>_small.jpg);
                     }
-                    @media (min-width: 1065px) {
+                    @media (min-width: 765px) {
                         [data-luxe-image="<?= $key; ?>"]:before {
                             background-image: url(/luxe/luxe-<?= $key; ?>_large.jpg);
                         }
