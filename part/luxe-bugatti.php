@@ -21,7 +21,7 @@
         <?
 
         $width = 1440;
-        $precision = 8;
+        $precision = 1;
         $images = [
             0 => round($width / 889, $precision),
             1 => round($width / 3692, $precision),
