@@ -7,36 +7,14 @@
             background: linear-gradient(#0E0E0E 66%, #FFFFFF 66%);
             position: relative;
         }
-        .luxe-image {
-            width: 100%;
-            position: relative;
-            z-index: 1000;
-            vertical-align: middle;
-        }
         [data-luxe-image] {
             position: relative;
             display: block;
             width: 100%;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center center;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 100%, 100%;
+            background-position: center center, center center;
         }
-        [data-luxe-image]:before, [data-luxe-image]:after {
-            content: '';
-            position: absolute;
-            z-index: 2000;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center center;
-        }
-        [data-luxe-image]:before {
-            z-index: 1000;
-        }
-
 
     </style>
     <div class="luxe-container">
@@ -57,21 +35,15 @@
                 <style>
                     [data-luxe-image="<?= $key; ?>"] {
                         height: calc(100vw / <?= $value; ?>);
-
                     }
 
-                    [data-luxe-image="<?= $key; ?>"]:before {
-                        background-image: url(/luxe/luxe-<?= $key; ?>_small.jpg);
+                    [data-luxe-image="<?= $key; ?>"] {
+                        background-image: url(/luxe/luxe-<?= $key; ?>-top.svg), url(/luxe/luxe-<?= $key; ?>_small.jpg);
                     }
                     @media (min-width: 765px) {
-                        [data-luxe-image="<?= $key; ?>"]:before {
-                            background-image: url(/luxe/luxe-<?= $key; ?>_large.jpg);
+                        [data-luxe-image="<?= $key; ?>"] {
+                            background-image: url(/luxe/luxe-<?= $key; ?>-top.svg), url(/luxe/luxe-<?= $key; ?>_large.jpg);
                         }
-                    }
-
-
-                    [data-luxe-image="<?= $key; ?>"]:after {
-                        background-image: url(/luxe/luxe-<?= $key; ?>-top.svg);
                     }
                 </style>
             <div data-luxe-image="<?= $key; ?>"></div>
