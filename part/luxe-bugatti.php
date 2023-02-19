@@ -11,9 +11,22 @@
             position: relative;
             display: block;
             width: 100%;
-            background-repeat: no-repeat, no-repeat;
-            background-size: cover, cover;
-            background-position: top left, top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top left;
+        }
+        [data-luxe-image]:after {
+            z-index: 2000;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-color: transparent;
         }
 
     </style>
@@ -38,11 +51,14 @@
                     }
 
                     [data-luxe-image="<?= $key; ?>"] {
-                        background-image: url(/luxe/luxe-<?= $key; ?>-top.svg), url(/luxe/luxe-<?= $key; ?>_small.jpg);
+                        background-image: url(/luxe/luxe-<?= $key; ?>_small.jpg);
+                    }
+                    [data-luxe-image="<?= $key; ?>"]:after {
+                        background-image: url(/luxe/luxe-<?= $key; ?>-top.svg);
                     }
                     @media (min-width: 765px) {
                         [data-luxe-image="<?= $key; ?>"] {
-                            background-image: url(/luxe/luxe-<?= $key; ?>-top.svg), url(/luxe/luxe-<?= $key; ?>_large.jpg);
+                            background-image: url(/luxe/luxe-<?= $key; ?>_large.jpg);
                         }
                     }
                 </style>
