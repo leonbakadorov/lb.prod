@@ -1,9 +1,9 @@
 <? include 'top.php'; ?>
 
 
-<? include 'part/header.php'; ?>
+<?/* include 'part/header.php'; */?><!--
 
-<? include 'part/luxe-bugatti.php'; ?>
+--><?/* include 'part/luxe-bugatti.php'; */?>
 
 
 <? //include 'part/logotypes.php'; ?>
@@ -11,7 +11,7 @@
 
 
 
-<? //include 'part/first-screen.php'; ?>
+<? include 'part/first-screen.php'; ?>
 
 <main>
 
@@ -19,12 +19,12 @@
 
 
 
-    <? //include 'part/offers.php'; ?>
+    <? include 'part/offers.php'; ?>
 
-    <? //include 'part/about.php'; ?>
+    <? include 'part/about.php'; ?>
 
 
-    <? //include 'part/ux.php'; ?>
+    <? include 'part/ux.php'; ?>
 
     <?/* include 'part/jobs.php'; */?>
 
@@ -36,7 +36,7 @@
 
 
     <!-- ------ Web Design Bugatti ------ -->
-    <div data-project="website"><? include 'product/bugatti/index.php'; ?></div>
+    <!--<div data-project="website"><?/* include 'product/bugatti/index.php'; */?></div>-->
 
 
 
