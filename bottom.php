@@ -1,7 +1,7 @@
 
 <? include 'part/footer.php'; ?>
 
-<? //include 'js/scripts.php'; ?>
+<? include 'js/scripts.php'; ?>
 
 
 
