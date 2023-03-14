@@ -1178,7 +1178,9 @@
 
     }
     .navigation.start {
-        background: #D1112A;
+        background: rgba(209,17,42,.1); /* #d1112a */
+        backdrop-filter: blur(34px);
+        -webkit-backdrop-filter: blur(34px);
     }
     .navigation.gallery {
         background: rgba(0,0,0,.01);
@@ -9272,23 +9274,23 @@
 
 
 
-        const bods = Array.from(document.querySelectorAll('main .body-section'));
-        const navAddBds = () => {
-            const add = bods.some(box => {
+        const fpp = Array.from(document.querySelectorAll('.fp-product'));
+        const navAddFpp = () => {
+            const add = fpp.some(box => {
                 const rect = box.getBoundingClientRect();
                 const y = rect.bottom / (navHeight + rect.bottom - rect.top);
                 return y > 0 && y < 1;
             });
-            nav.classList.toggle('bods', add)
+            nav.classList.toggle('start', add)
         }
-        window.addEventListener('scroll', navAddBds);
-        navAddBds();
+        window.addEventListener('scroll', navAddFpp);
+        navAddFpp();
 
 
 
 
 
-        function navStart() {
+        /*function navStart() {
             if(window.pageYOffset > 0) {
                 nav.classList.remove('start');
             } else {
@@ -9296,7 +9298,7 @@
             }
         }
         window.addEventListener('scroll', navStart);
-        navStart();
+        navStart();*/
 
 
 
