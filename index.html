@@ -4938,12 +4938,19 @@
 
 
             @media (max-width: 735px) {
+
+                .mores .animateOpacity {
+                    opacity: 0;
+                    transform: translateY(40px);
+                    transition: opacity 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) .1s,
+                    transform 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) .1s;
+                }
+
+
                 .mores {
                     padding-top: 80px;
                     padding-bottom: 64px;
                 }
-
-
 
                 .more-big-columns, .more-small-columns {
                     grid-template-columns: 1fr;
