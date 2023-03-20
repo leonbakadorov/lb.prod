@@ -4305,9 +4305,9 @@
             .kpi-lines.ltv .kpi-line.after {
                 background: linear-gradient(90deg, #F06844 0%, #EE4C54 25%, #D45E95 50%, #9C6CA6 75%, #6583C1 100%);
             }
-            .kpi-lines.ltv .kpi-line.before {
+            /*.kpi-lines.ltv .kpi-line.before {
                 width: calc(100% / 3.85);
-            }
+            }*/
 
             /* ***************** ROI **************** */
             .kpi-lines.roi .kpi-line-caption:first-child {
@@ -4320,9 +4320,9 @@
             .kpi-lines.roi .kpi-line.after {
                 background: linear-gradient(90deg, #8980ED 0%, #EC787F 50%, #FFC170 100%);
             }
-            .kpi-lines.roi .kpi-line.before {
+            /*.kpi-lines.roi .kpi-line.before {
                 width: calc(100% / 4.37);
-            }
+            }*/
 
             /* ***************** CAC **************** */
             .kpi-lines.cac .kpi-line-caption:first-child {
@@ -4335,9 +4335,9 @@
             .kpi-lines.cac .kpi-line.after {
                 background: linear-gradient(90deg, #5A9AD3 20%, #BC70FF 80%);
             }
-            .kpi-lines.cac .kpi-line.after {
+            /*.kpi-lines.cac .kpi-line.after {
                 width: calc(100% - 39%);
-            }
+            }*/
 
             /* ***************** NPS **************** */
             .kpi-lines.nps .kpi-line-caption:first-child {
@@ -4350,9 +4350,9 @@
             .kpi-lines.nps .kpi-line.after {
                 background: linear-gradient(110.36deg, #7D61C2 13.53%, #C740A3 86.47%);
             }
-            .kpi-lines.nps .kpi-line.before {
+            /*.kpi-lines.nps .kpi-line.before {
                 width: calc(100% / 1.87);
-            }
+            }*/
 
             /* ***************** ARPU **************** */
             .kpi-lines.arpu .kpi-line-caption:first-child {
@@ -4365,9 +4365,9 @@
             .kpi-lines.arpu .kpi-line.after {
                 background: linear-gradient(90deg, #90CA5A 0%, #D7D65A 50%, #DAC355 70%);
             }
-            .kpi-lines.arpu .kpi-line.before {
+            /*.kpi-lines.arpu .kpi-line.before {
                 width: calc(100% / 2.96);
-            }
+            }*/
 
 
             .kpi-line {
@@ -4379,13 +4379,56 @@
             .kpi-line.after {
                 margin-bottom: 20px;
             }
+
+            .kpi-line {
+                width: 0;
+                transition: width 500ms ease-in-out .3s;
+            }
+            .kpi-line.before {
+                transition: width 500ms ease-in-out .5s;
+            }
+
+            .kpi-lines.animateOpacity.active.ltv .kpi-line.after {
+                width: 100%;
+            }
+            .kpi-lines.animateOpacity.active.ltv .kpi-line.before {
+                width: calc(100% / 3.85);
+            }
+
+            .kpi-lines.animateOpacity.active.roi .kpi-line.after {
+                width: 100%;
+            }
+            .kpi-lines.animateOpacity.active.roi .kpi-line.before {
+                width: calc(100% / 4.37);
+            }
+
+            .kpi-lines.animateOpacity.active.cac .kpi-line.after {
+                width: calc(100% - 39%);
+            }
+            .kpi-lines.animateOpacity.active.cac .kpi-line.before {
+                width: 100%;
+            }
+
+            .kpi-lines.animateOpacity.active.nps .kpi-line.after {
+                width: 100%;
+            }
+            .kpi-lines.animateOpacity.active.nps .kpi-line.before {
+                width: calc(100% / 1.87);
+            }
+
+            .kpi-lines.animateOpacity.active.arpu .kpi-line.after {
+                width: 100%;
+            }
+            .kpi-lines.animateOpacity.active.arpu .kpi-line.before {
+                width: calc(100% / 2.96);
+            }
         </style>
 
             <section class="body-section kpis">
 
 
         <div class="product-gallery__container ">
-            <div class="product-gallery__project-name">
+            <div class="product-gallery__project-name animateOpacity">
                 <span class="product-gallery__project-name_caption">KPI · Key Performance Indicators</span>
                 <h3 class="product-gallery__project-name__headline">Ключевые показатели эффективности.</h3>
             </div>
