@@ -9,6 +9,31 @@
 </head>
 <body>
 <style>
+    @font-face {
+            font-family:'Balmach Sans';
+            src: url('/css/font/leon-bakadorov-sans.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+        }
+    html, body, section, div, h1, h2, h3, h4, p, a, ul, ol, li, span, dt, dd, input, textarea, select, button {
+            font-family: "Balmach Sans", "-apple-system", BlinkMacSystemFont, "-webkit-system-font", "Malgun Gothic", "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 500;
+            font-synthesis: none;
+            font-feature-settings: "kern";
+            -moz-font-feature-settings: "kern";
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+        }
+
+        body, input, textarea, select, button {
+            font-synthesis: none;
+            -moz-font-feature-settings: 'kern';
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            direction: ltr;
+            text-align: left;
+        }
     main {
         max-width: 654px;
         margin: 0 auto;
